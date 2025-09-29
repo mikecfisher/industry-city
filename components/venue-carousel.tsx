@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const ChevronLeftIcon = () => (
@@ -73,7 +74,7 @@ export default function VenueCarousel() {
             Venue Showcase
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground font-inter max-w-3xl mx-auto">
-            Experience the versatility of Industry City's modular event spaces through our recent productions
+            Experience the versatility of Industry City&apos;s modular event spaces through our recent productions
           </p>
         </div>
 
@@ -87,7 +88,13 @@ export default function VenueCarousel() {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <img src={image.src || "/placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
                 {/* Content overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 bg-black/60">
                   <div className="max-w-4xl">
@@ -144,7 +151,13 @@ export default function VenueCarousel() {
               }`}
               onClick={() => goToSlide(index)}
             >
-              <img src={image.src || "/placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
+              <Image
+                src={image.src || "/placeholder.svg"}
+                alt={image.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 33vw, 20vw"
+              />
             </button>
           ))}
         </div>

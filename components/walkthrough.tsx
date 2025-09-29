@@ -33,7 +33,7 @@ export function Walkthrough() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-space-grotesk font-light mb-8">See the Space</h2>
 
           <p className="font-inter text-base md:text-lg text-foreground/80 mb-12 max-w-2xl mx-auto">
-            Experience the raw potential and activated possibilities of Industry City's modular festival grounds.
+            Experience the raw potential and activated possibilities of Industry City&apos;s modular festival grounds.
           </p>
 
           <div className="aspect-video rounded-lg mb-8 overflow-hidden">

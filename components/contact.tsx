@@ -45,7 +45,7 @@ export function Contact() {
           </div>
 
           <p className="text-xs font-inter text-muted-foreground mt-8">
-            We'll reply same day with availability and next steps.
+            We&apos;ll reply same day with availability and next steps.
           </p>
         </div>
       </div>
