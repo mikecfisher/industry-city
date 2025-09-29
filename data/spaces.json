@@ -1,0 +1,46 @@
+{
+  "spaces": [
+    {
+      "id": "box-factory",
+      "name": "Box Factory",
+      "type": "Interior",
+      "area": "18,810 SF",
+      "capacity": "1,200 standing",
+      "features": [
+        "Ground floor access",
+        "Drive-in capability",
+        "Rigging points available",
+        "Wi-Fi infrastructure",
+        "Year-round availability"
+      ],
+      "description": "Raw industrial interior space with high ceilings and flexible layout options."
+    },
+    {
+      "id": "courtyard-7-8",
+      "name": "Courtyard 7/8",
+      "type": "Courtyard",
+      "area": "33,310 SF",
+      "capacity": "Flexible",
+      "features": ["Adjoins Box Factory", "Outdoor space", "Seasonal use (May-Nov)", "Landscaped environment"],
+      "description": "Large outdoor courtyard space that can be combined with Box Factory for expanded capacity."
+    },
+    {
+      "id": "bandshell",
+      "name": "Bandshell (Courtyard 1/2)",
+      "type": "Courtyard",
+      "area": "24,641 SF",
+      "capacity": "1,200 standing",
+      "features": ["Pit: 2,214 SF", "Established venue", "Sound-friendly design", "Proven event history"],
+      "description": "Established outdoor venue with dedicated pit area and sound-optimized design."
+    },
+    {
+      "id": "private-streets",
+      "name": "Private Streets",
+      "type": "Streets",
+      "area": "20,430 USF",
+      "capacity": "Scalable",
+      "features": ["33rd-36th St closeable", "Power/water tie-ins", "Multi-stage potential", "Vehicle access"],
+      "description": "Closeable private streets enabling large-scale festival configurations."
+    }
+  ]
+}

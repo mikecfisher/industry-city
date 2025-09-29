@@ -1,0 +1,21 @@
+{
+  "name": "Industry City",
+  "tagline": "Modular Urban Festival Grounds",
+  "description": "Raw interiors, landscaped courtyards, private streets. New York-scale shows, Brooklyn logistics.",
+  "stats": {
+    "acres": 35,
+    "buildings": 16,
+    "totalSqFt": "6M",
+    "companies": "650+"
+  },
+  "location": {
+    "address": "Brooklyn, NY",
+    "neighborhood": "Sunset Park",
+    "transit": "Multiple subway lines",
+    "parking": "On-site available"
+  },
+  "contact": {
+    "email": "events@industrycity.com",
+    "phone": "+1 (718) 555-0123"
+  }
+}

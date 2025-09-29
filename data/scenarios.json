@@ -1,0 +1,47 @@
+{
+  "scenarios": [
+    {
+      "id": "single-stage",
+      "title": "Single-Stage Setup",
+      "description": "Courtyard 7/8 + Private Streets",
+      "totalArea": 53740,
+      "spaces": ["courtyard-7-8", "private-streets"],
+      "capacities": [
+        {
+          "density": 10,
+          "densityLabel": "10 SF/person",
+          "capacity": 5374,
+          "description": "Dense dance configuration"
+        },
+        {
+          "density": 8,
+          "densityLabel": "8 SF/person",
+          "capacity": 6718,
+          "description": "Optimal dance floor density"
+        }
+      ]
+    },
+    {
+      "id": "multi-stage",
+      "title": "Multi-Stage Festival",
+      "description": "Courtyard 7/8 + 3/4 West + 5/6 West + Private Streets",
+      "totalArea": 75057,
+      "spaces": ["courtyard-7-8", "courtyard-3-4", "courtyard-5-6", "private-streets"],
+      "capacities": [
+        {
+          "density": 10,
+          "densityLabel": "10 SF/person",
+          "capacity": 7506,
+          "description": "Conservative multi-stage layout"
+        },
+        {
+          "density": 7,
+          "densityLabel": "7 SF/person",
+          "capacity": 10722,
+          "description": "Maximum multi-stage capacity"
+        }
+      ]
+    }
+  ],
+  "disclaimer": "Capacity illustrations are area-based estimates and not permit limits. Final occupancies follow stamped egress calculations and approvals by DOB/FDNY."
+}
