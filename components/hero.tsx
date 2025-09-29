@@ -3,20 +3,31 @@
 import MuxPlayer from "@mux/mux-player-react"
 import { PrimaryButton } from "./ui/primary-button"
 import { useState, useEffect } from "react"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Hero() {
   const [playbackId, setPlaybackId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const isMobile = useIsMobile()
+
+  // Hardcoded playback IDs for mobile and desktop
+  const DESKTOP_PLAYBACK_ID = process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID
+  const MOBILE_PLAYBACK_ID = process.env.NEXT_PUBLIC_MUX_MOBILE_PLAYBACK_ID || "b3CxYyru6vf51StvjjWtCm1P4PQx9ite4HYznyUdJaU"
 
   useEffect(() => {
-    // First try to use environment variable for playback ID
-    const envPlaybackId = process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID
-    if (envPlaybackId) {
-      setPlaybackId(envPlaybackId)
+    // Select appropriate playback ID based on device type
+    if (isMobile && MOBILE_PLAYBACK_ID) {
+      setPlaybackId(MOBILE_PLAYBACK_ID)
       return
     }
 
-    // If no playback ID in env, try to fetch it from asset ID
+    // For desktop, first try to use environment variable
+    if (DESKTOP_PLAYBACK_ID) {
+      setPlaybackId(DESKTOP_PLAYBACK_ID)
+      return
+    }
+
+    // If no desktop playback ID in env, try to fetch it from asset ID
     const assetId = "zrnaAPQZTBLj5r9ruyJaSHm3MWlxSrQhkc7AWyqekmg"
 
     fetch(`/api/mux-playback-id?assetId=${assetId}`)
@@ -31,7 +42,7 @@ export function Hero() {
       .catch(() => {
         setError("Could not connect to Mux. Please set up MUX_TOKEN_ID and MUX_TOKEN_SECRET environment variables.")
       })
-  }, [])
+  }, [isMobile, DESKTOP_PLAYBACK_ID, MOBILE_PLAYBACK_ID])
 
   return (
     <div className="relative flex flex-col h-screen justify-end -mt-[50px]">
