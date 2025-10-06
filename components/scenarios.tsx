@@ -27,17 +27,20 @@ export function Scenarios() {
   const scenarios = [
     {
       title: "Single-Stage Setup",
-      description: "Courtyard 7/8 + Private Streets",
-      totalArea: "53,740 SF",
-      capacities: [
-        { density: "10 SF/person", capacity: "5,374" },
-        { density: "8 SF/person", capacity: "6,718" },
+      description: "Courtyard 7/8 + Box Factory + Private Street Option",
+      details: [
+        "Courtyard 7/8 @ avg cap. 5k",
+        "Box Factory @ avg cap. 4k",
+        "Private Street Option @ avg cap. 6k"
       ],
     },
     {
       title: "Multi-Stage Festival",
-      description: "Courtyard 7/8 + 3/4 West + 5/6 West + Private Streets",
-      totalArea: "75,057 SF",
+      description: "Courtyard 7/8 + Box Factory + Building 8 + Building 7 + Private Streets",
+      details: [
+        "1-9 Possible Stages of Music",
+        "Total Area 75,057 SF"
+      ],
       capacities: [
         { density: "10 SF/person", capacity: "7,506" },
         { density: "7 SF/person", capacity: "10,722" },
@@ -64,10 +67,10 @@ export function Scenarios() {
                 key={index}
                 title={scenario.title}
                 description={scenario.description}
-                stats={[
-                  { label: "Total Area", value: scenario.totalArea }
-                ]}
-                items={scenario.capacities.map(cap => ({
+                items={scenario.details ? scenario.details.map(detail => ({
+                  label: detail,
+                  value: ""
+                })) : scenario.capacities?.map(cap => ({
                   label: `@ ${cap.density}`,
                   value: cap.capacity
                 }))}

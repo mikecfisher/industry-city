@@ -43,10 +43,6 @@ export function Contact() {
               Request Tech Package
             </PrimaryButton>
           </div>
-
-          <p className="text-xs font-inter text-muted-foreground mt-8">
-            We&apos;ll reply same day with availability and next steps.
-          </p>
         </div>
       </div>
     </section>

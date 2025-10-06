@@ -24,8 +24,8 @@ export function WhyIC() {
   }, [])
 
   const reasons = [
-    "35-acre campus; raw Box Factory + multiple courtyards + closeable private streets",
-    "Proven electronic shows on site; flexible looks day → night",
+    "Large campus/ endless possibility; raw Box Factory + multiple courtyards + closeable private streets",
+    "Proven electronic shows on site; flexible looks day → night; no outdoor sound restrictions",
     "Load-in that doesn't hate you (drive-in, rigging points, power)",
   ]
 
