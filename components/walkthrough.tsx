@@ -63,9 +63,11 @@ export function Walkthrough() {
               Access detailed plans and resources for your event planning needs.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1ai1LHcPtwLJvXO-Hco5WGSX4dqIY4FQ2/view"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex flex-col items-center p-6 rounded-lg border border-border/20 hover:border-accent/50 transition-colors bg-card/20 hover:bg-card/40"
               >
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -78,7 +80,10 @@ export function Walkthrough() {
               </a>
 
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1-DQBs996VMFuxVUwd01eu3-DGBDqtc6I/view"
+
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex flex-col items-center p-6 rounded-lg border border-border/20 hover:border-accent/50 transition-colors bg-card/20 hover:bg-card/40"
               >
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
@@ -90,7 +95,7 @@ export function Walkthrough() {
                 </p>
               </a>
 
-              <a
+              {/* <a
                 href="#"
                 className="group flex flex-col items-center p-6 rounded-lg border border-border/20 hover:border-accent/50 transition-colors bg-card/20 hover:bg-card/40"
               >
@@ -99,7 +104,7 @@ export function Walkthrough() {
                 </div>
                 <h4 className="font-space-grotesk font-medium mb-2">2026 Press Kit</h4>
                 <p className="font-inter text-sm text-foreground/60 text-center">Media assets and venue information</p>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
